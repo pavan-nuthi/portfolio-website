@@ -1,0 +1,26 @@
+[
+ 
+  {
+    "role": "Devops Intern",
+    "organisation": "Sprinklr",
+    "startDate": "Jan, 2024",
+    "endDate": "Jun, 2024",
+    "experiences": [
+      "I was involved in the development and establishment of disaster recovery setups for production environments.",
+      "Created scripts for automating the setup of environments."
+    ],
+    "imageSrc": "history/sprinklr.png"
+  },
+  {
+    "role": "Teaching Assistant for DBMS course",
+    "organisation": "PES University",
+    "startDate": "Aug, 2023",
+    "endDate": "Dec, 2023",
+    "experiences": [
+      "Created materials for courses and developed course assignments.",
+      "During lab hours, I helped students by clearing up any doubts they had and offering hints."
+    ],
+    "imageSrc": "history/pesu.png"
+  }
+  
+]

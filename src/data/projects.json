@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Real Time Crypto Application",
+    "imageSrc": "projects/project-1.png",
+    "description": "The project offers real-time information on cryptocurrency prices, allowing for immediate insights.",
+    "skills": ["Spark","Kafka","Node.js","Typescript","Tailwind css"],
+    "demo": "https://github.com/pavan-kumar-nuthi/Spark-streaming-batch",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Mini Kafka",
+    "imageSrc": "projects/project-2.png",
+    "description": "Recreating kafka's capabilities by utilizing the file system for storage and implementing socket programming for communication.",
+    "skills": ["Python","Socket","File System"],
+    "demo": "https://github.com/pavan-kumar-nuthi/Replicating-kafka'",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Car Rental System",
+    "imageSrc": "projects/project-3.png",
+    "description": "Streamlit was used to design and construct user interfaces that manage SQL data retrieval and manipulation.",
+    "skills": ["Streamlit", "MySql"],
+    "demo": "https://github.com/pavan-kumar-nuthi/Car-rental-management-system'",
+    "source": "https://www.github.com"
+  }
+]
