@@ -1,10 +1,13 @@
 Steps to run this projects
 
 1)Firstly install the dependencies using
+   
    npm install
-   Installing font requirements
-   npm install @fontsource/outfit
-   npm install @fontsource/roboto
+      
+Installing font requirements
+npm install @fontsource/outfit
+npm install @fontsource/roboto
+
 2)npm run dev 
   To check the output
 
