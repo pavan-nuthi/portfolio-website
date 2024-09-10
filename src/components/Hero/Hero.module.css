@@ -55,13 +55,14 @@
 /* } */
 
 .contactBtn {
+  text-decoration: none;
   background-color: var(--color-primary);
   color: var(--color-text);
   border-radius: 100px;
   font-size: 30px;
   font-weight: 600;
   padding: 17px 26px;
-  /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25); */
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 
@@ -73,7 +74,7 @@
   font-weight: 600;
   padding: 17px 50px 17px 50px;
   margin: 30px;
-  /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25); */
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 .buttonContainer {
   display: flex;
