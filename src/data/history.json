@@ -1,13 +1,25 @@
 [
  
   {
+    "role": "Associate Devops Engineer",
+    "organisation": "Sprinklr",
+    "startDate": "August, 2024",
+    "endDate": "Present",
+    "experiences": [
+      "Deployed and maintained infrastructure for Elasticsearch servers.",
+      "Involved in the improving the python scripts and procedures for the setup of disaster recovery environments."
+    ],
+    "imageSrc": "history/sprinklr.png"
+  },
+  {
     "role": "Devops Intern",
     "organisation": "Sprinklr",
     "startDate": "Jan, 2024",
     "endDate": "Jun, 2024",
     "experiences": [
-      "I was involved in the development and establishment of disaster recovery setups for production environments.",
-      "Created scripts for automating the setup of environments."
+      "Created and implemented disaster recovery setup that increased the production environment's fault tolerance by more than 90 percent.",
+      "Involved in designing and creating resiliency scripts for monitoring resources deployed on Elasticsearch.",
+      "Refactored legacy code written in perl to python."
     ],
     "imageSrc": "history/sprinklr.png"
   },
@@ -17,8 +29,8 @@
     "startDate": "Aug, 2023",
     "endDate": "Dec, 2023",
     "experiences": [
-      "Created materials for courses and developed course assignments.",
-      "During lab hours, I helped students by clearing up any doubts they had and offering hints."
+      "Assisted in the creation of new course material from scratch based on the concepts from the textbook Database System Concepts and variety of online resources.",
+      "Developed practical and challenging course assignments on a weekly basis throughout the semester."
     ],
     "imageSrc": "history/pesu.png"
   }
