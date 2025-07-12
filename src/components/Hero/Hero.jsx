@@ -9,7 +9,7 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Pavan</h1>
         <p className={styles.description}>
-        I graduated with a degree in Computer Science and Engineering from PES University. I gained experience as a Devops Intern at Sprinklr. I am seeking opportunities as a Software Engineer,Devops Engineer or Systems Engineer.
+        I'm a Computer Science graduate student at UC Davis, with hands-on experience building scalable infrastructure, identity solutions, and distributed systems at Athenahealth and Sprinklr.
         </p>
         <div className={styles.buttonContainer}>
         <a href="mailto:pavankumarnuthi@gmail.com" className={styles.contactBtn}>
@@ -17,7 +17,7 @@ export const Hero = () => {
         </a>
         <button
           className={styles.cvBtn}
-          onClick={() => {window.open(getImageUrl("hero/Resume.pdf"), '_blank');}}
+          onClick={() => {window.open(getImageUrl("hero/Resume_Pavan_UCD.pdf"), '_blank');}}
         >
           Resume
         </button>
