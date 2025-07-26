@@ -1,21 +1,32 @@
 Steps to run this projects
 
 1)Firstly install the dependencies using
-   
+   ```
    npm install
-      
-Installing font requirements
+   ```
+Install the font requirements using
+```
 npm install @fontsource/outfit
 npm install @fontsource/roboto
+```
 
-2)npm run dev 
-  To check the output
-
-3)npm run build
-  To convert react contents to html,css and js since it is required for deployment
+2)To view the output locally run
+```
+npm run dev
+```
   
-4)npm run preview
-  To check the output before deployment
+
+3)To convert react contents to html,css and js since it is required for deployment
+```
+npm run build
+```
+  
+  
+4) To check the output before deployment
+```   
+npm run preview
+```
+ 
 
 
   
