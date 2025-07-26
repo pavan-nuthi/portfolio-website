@@ -15,7 +15,7 @@
     "role": "Associate Devops Engineer",
     "organisation": "Sprinklr",
     "startDate": "August, 2024",
-    "endDate": "December, 2025",
+    "endDate": "December, 2024",
     "experiences": [
       "Completely automated the process of setup of infrastructure for Elasticsearch servers using Ansible and improved the speed of setup by over 90%.",
       "Involved in designing and creating resiliency scripts for monitoring resources deployed on Elasticsearch servers, as well as implementing auto-remediation tasks in response to any server-related issues.",
