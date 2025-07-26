@@ -18,8 +18,6 @@ npm install @fontsource/roboto
   To check the output before deployment
 
 
-Referenced from https://github.com/CodeCompleteYT/react-portfolio
-
   
 
 
