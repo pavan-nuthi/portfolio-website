@@ -1,13 +1,5 @@
 [
   {
-    "title": "HTML",
-    "imageSrc": "skills/html.png"
-  },
-  {
-    "title": "CSS",
-    "imageSrc": "skills/css.png"
-  },
-  {
     "title": "React",
     "imageSrc": "skills/react.png"
   },
@@ -16,15 +8,43 @@
     "imageSrc": "skills/node.png"
   },
   {
-    "title": "GraphQL",
-    "imageSrc": "skills/graphql.png"
+    "title": "Okta",
+    "imageSrc": "skills/okta.png"
   },
   {
-    "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
+    "title": "Kafka",
+    "imageSrc": "skills/kafka.png"
   },
   {
-    "title": "Figma",
-    "imageSrc": "skills/figma.png"
+    "title": "Spark",
+    "imageSrc": "skills/spark.png"
+  },
+  {
+    "title": "Python",
+    "imageSrc": "skills/python.png"
+  },
+  {
+    "title": "Elasticsearch",
+    "imageSrc": "skills/elasticsearch.png"
+  },
+  {
+    "title": "Terraform",
+    "imageSrc": "skills/terraform.png"
+  },
+  {
+    "title": "Kubernetes",
+    "imageSrc": "skills/kubernetes.png"
+  },
+  {
+    "title": "Ansible",
+    "imageSrc": "skills/ansible.png"
+  },
+  {
+    "title": "PyTorch",
+    "imageSrc": "skills/PyTorch.png"
+  },
+  {
+    "title": "OpenCV",
+    "imageSrc": "skills/OpenCV.png"
   }
 ]

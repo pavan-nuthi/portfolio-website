@@ -1,26 +1,114 @@
 @import "../../vars.css";
 
 .container {
-  margin-top: 76px;
+  position: relative;
+  padding: 5rem 10%;
   color: var(--color-text);
-  margin-left: 10%;
-  margin-right: 10%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  z-index: 2;
+}
+
+.titleSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
 }
 
 .title {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
+  font-family: var(--font-roboto);
+  color: var(--color-text);
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  white-space: nowrap;
+}
+
+.titleNumber {
+  font-size: 1.5rem;
+  color: #64ffda;
+  font-weight: 400;
+  font-family: 'Courier New', monospace;
+}
+
+.titleText {
+  color: var(--color-text);
+}
+
+.titleLine {
+  height: 1px;
+  background: linear-gradient(90deg, #64ffda, transparent);
+  flex: 1;
+  transform-origin: left;
 }
 
 .projects {
-  margin-top: 37px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+  perspective: 1000px;
+}
+
+.backgroundDecoration {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgba(100, 255, 218, 0.1);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.backgroundDecoration::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(100, 255, 218, 0.1), transparent);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 3rem 5%;
+  }
+  
+  .titleSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .backgroundDecoration {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+  }
 }

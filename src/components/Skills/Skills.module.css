@@ -1,0 +1,225 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  padding: 5rem 10%;
+  color: var(--color-text);
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(10, 25, 47, 0.05), rgba(25, 55, 109, 0.05));
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+
+.titleSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: var(--font-roboto);
+  color: var(--color-text);
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  white-space: nowrap;
+}
+
+.titleNumber {
+  font-size: 1.5rem;
+  color: #64ffda;
+  font-weight: 400;
+  font-family: 'Courier New', monospace;
+}
+
+.titleText {
+  color: var(--color-text);
+}
+
+.titleLine {
+  height: 1px;
+  background: linear-gradient(90deg, #64ffda, transparent);
+  flex: 1;
+  transform-origin: left;
+  max-width: 300px;
+}
+
+/* Skills Section */
+.skillsSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2.5rem;
+  max-width: 900px;
+  width: 100%;
+}
+
+.skill {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  transform: translateY(0);
+}
+
+.skill:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(100, 255, 218, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.3),
+    0 5px 15px rgba(100, 255, 218, 0.2);
+}
+
+.skillImageContainer {
+  position: relative;
+  background: rgba(255, 255, 255, 0.85);
+  border: 2px solid rgba(100, 255, 218, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.skill:hover .skillImageContainer {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(100, 255, 218, 0.7);
+  transform: scale(1.1);
+  box-shadow: 
+    0 0 25px rgba(100, 255, 218, 0.4),
+    0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skillImageContainer img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: brightness(0.8) contrast(1.3) saturate(1.2);
+  transition: all 0.4s ease;
+}
+
+.skill:hover .skillImageContainer img {
+  filter: brightness(1.6) contrast(1.3);
+  transform: scale(1.05);
+}
+
+.skill p {
+  font-size: 1.1rem;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  margin: 0;
+  transition: all 0.4s ease;
+}
+
+.skill:hover p {
+  color: #64ffda;
+  transform: translateY(-2px);
+}
+
+/* Background Decorations */
+.backgroundDecoration1 {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgba(100, 255, 218, 0.1);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.backgroundDecoration1::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75px;
+  height: 75px;
+  background: radial-gradient(circle, rgba(100, 255, 218, 0.05), transparent);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.backgroundDecoration2 {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, rgba(100, 255, 218, 0.1), transparent);
+  border-radius: 20px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 3rem 5%;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .titleSection {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .skill {
+    padding: 1.5rem 1rem;
+  }
+  
+  .skillImageContainer {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .skillImageContainer img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .skill p {
+    font-size: 0.9rem;
+  }
+}
