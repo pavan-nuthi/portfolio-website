@@ -329,24 +329,500 @@
   pointer-events: none;
 }
 
-@media screen and (max-width: 830px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
-    gap: 34px;
+/* Mobile First - Small phones (320px - 480px) */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 3rem 5% 2rem;
+    min-height: auto;
   }
 
-  .skills {
+  .content {
+    max-width: 100%;
+  }
+
+  .titleSection {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .titleNumber {
+    font-size: 1.2rem;
+  }
+
+  .titleText {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .titleLine {
+    width: 200px;
+    max-width: 80%;
+    align-self: center;
+  }
+
+  /* Timeline - Mobile Stack Layout */
+  .timelineSection {
     width: 100%;
-    flex-direction: row;
-    justify-content: center;
+  }
+
+  .timelineLine {
+    left: 20px;
+    transform: none;
   }
 
   .history {
-    width: 100%;
-    gap: 9px;
+    gap: 2rem;
+    padding-left: 0;
   }
-  .expIcon{
+
+  .historyItem {
+    flex-direction: row !important;
+    align-items: flex-start;
+    gap: 0;
+    padding-left: 50px;
+    position: relative;
+  }
+
+  .historyItem:nth-child(even) {
+    flex-direction: row !important;
+  }
+
+  .timelineIcon {
+    position: absolute;
+    left: -5px;
+    top: 0;
+    transform: none;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .expIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .historyItemDetails {
+    flex: 1;
+    max-width: 100%;
+    margin-left: 0;
+    padding: 1.5rem;
+    text-align: left !important;
+  }
+
+  .historyItemDetails h3 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+
+  .role, .organisation {
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+
+  .at {
     display: none;
+  }
+
+  .dateRange {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .experienceList li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.6rem;
+    padding-left: 1.2rem;
+  }
+
+  .timelineConnector {
+    left: 15px;
+    transform: none;
+    height: 2rem;
+  }
+
+  .backgroundDecoration1,
+  .backgroundDecoration2 {
+    display: none;
+  }
+}
+
+/* Large phones (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    padding: 4rem 6% 2.5rem;
+  }
+
+  .titleSection {
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .titleNumber {
+    font-size: 1.3rem;
+  }
+
+  .titleLine {
+    width: 250px;
+  }
+
+  /* Timeline - Mobile Stack Layout */
+  .timelineLine {
+    left: 25px;
+    transform: none;
+  }
+
+  .history {
+    gap: 2.5rem;
+  }
+
+  .historyItem {
+    flex-direction: row !important;
+    padding-left: 60px;
+  }
+
+  .historyItem:nth-child(even) {
+    flex-direction: row !important;
+  }
+
+  .timelineIcon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: none;
+    width: 50px;
+    height: 50px;
+  }
+
+  .expIcon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .historyItemDetails {
+    max-width: 100%;
+    padding: 1.8rem;
+    text-align: left !important;
+  }
+
+  .historyItemDetails h3 {
+    font-size: 1.3rem;
+  }
+
+  .experienceList li {
+    font-size: 0.95rem;
+  }
+
+  .timelineConnector {
+    left: 24px;
+    transform: none;
+  }
+
+  .backgroundDecoration1 {
+    width: 80px;
+    height: 80px;
+    left: 3%;
+  }
+
+  .backgroundDecoration2 {
+    width: 60px;
+    height: 60px;
+    right: 5%;
+  }
+}
+
+/* Tablets - iPad Portrait (769px - 834px) */
+@media screen and (min-width: 769px) and (max-width: 834px) {
+  .container {
+    padding: 4.5rem 6% 3rem;
+  }
+
+  .titleSection {
+    justify-content: center;
+    margin-bottom: 3.5rem;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .titleNumber {
+    font-size: 1.3rem;
+  }
+
+  .titleLine {
+    max-width: 200px;
+  }
+
+  /* Timeline - iPad Portrait Stack Layout */
+  .timelineLine {
+    left: 30px;
+    transform: none;
+  }
+
+  .history {
+    gap: 2.5rem;
+  }
+
+  .historyItem {
+    flex-direction: row !important;
+    padding-left: 70px;
+  }
+
+  .historyItem:nth-child(even) {
+    flex-direction: row !important;
+  }
+
+  .timelineIcon {
+    position: absolute;
+    left: 5px;
+    top: 0;
+    transform: none;
+    width: 50px;
+    height: 50px;
+  }
+
+  .expIcon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .historyItemDetails {
+    max-width: 100%;
+    padding: 2rem;
+    text-align: left !important;
+  }
+
+  .historyItemDetails h3 {
+    font-size: 1.4rem;
+  }
+
+  .timelineConnector {
+    left: 29px;
+    transform: none;
+  }
+
+  .backgroundDecoration1 {
+    width: 100px;
+    height: 100px;
+    left: 4%;
+  }
+
+  .backgroundDecoration2 {
+    width: 70px;
+    height: 70px;
+    right: 6%;
+  }
+}
+
+/* Tablets - iPad Landscape (835px - 1024px) */
+@media screen and (min-width: 835px) and (max-width: 1024px) {
+  .container {
+    padding: 4.5rem 8% 3rem;
+  }
+
+  .titleSection {
+    justify-content: center;
+    margin-bottom: 3.5rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .titleNumber {
+    font-size: 1.4rem;
+  }
+
+  .titleLine {
+    max-width: 220px;
+  }
+
+  /* Timeline - iPad Air Stack Layout (same as Portrait and Pro) */
+  .timelineLine {
+    left: 32px;
+    transform: none;
+  }
+
+  .history {
+    gap: 2.8rem;
+  }
+
+  .historyItem {
+    flex-direction: row !important;
+    padding-left: 75px;
+  }
+
+  .historyItem:nth-child(even) {
+    flex-direction: row !important;
+  }
+
+  .timelineIcon {
+    position: absolute;
+    left: 7px;
+    top: 0;
+    transform: none;
+    width: 55px;
+    height: 55px;
+  }
+
+  .expIcon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .historyItemDetails {
+    max-width: 100%;
+    padding: 2rem;
+    text-align: left !important;
+  }
+
+  .historyItemDetails h3 {
+    font-size: 1.5rem;
+  }
+
+  .experienceList li {
+    font-size: 1rem;
+  }
+
+  .timelineConnector {
+    left: 31px;
+    transform: none;
+  }
+
+  .backgroundDecoration1 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .backgroundDecoration2 {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* iPad Pro and Large tablets (1025px - 1400px) */
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+  .container {
+    padding: 4rem 9% 3rem;
+    min-height: 90vh;
+  }
+
+  .titleSection {
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .title {
+    font-size: 3.4rem;
+  }
+
+  .titleNumber {
+    font-size: 1.6rem;
+  }
+
+  .titleLine {
+    max-width: 250px;
+  }
+
+  /* Timeline - iPad Pro Stack Layout (same as Air) */
+  .timelineLine {
+    left: 35px;
+    transform: none;
+  }
+
+  .history {
+    gap: 3rem;
+  }
+
+  .historyItem {
+    flex-direction: row !important;
+    padding-left: 80px;
+  }
+
+  .historyItem:nth-child(even) {
+    flex-direction: row !important;
+  }
+
+  .timelineIcon {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    transform: none;
+    width: 60px;
+    height: 60px;
+  }
+
+  .expIcon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .historyItemDetails {
+    max-width: 100%;
+    padding: 2.5rem;
+    text-align: left !important;
+  }
+
+  .historyItemDetails h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .dateRange {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .experienceList li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    padding-left: 1.8rem;
+  }
+
+  .experienceList li::before {
+    font-size: 0.9rem;
+  }
+
+  .timelineConnector {
+    left: 34px;
+    transform: none;
+  }
+
+  .backgroundDecoration1 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .backgroundDecoration2 {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* Very Large screens (1401px+) */
+@media screen and (min-width: 1401px) {
+  .container {
+    padding: 5rem 10% 4rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
   }
 }

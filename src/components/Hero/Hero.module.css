@@ -74,6 +74,7 @@
     #64ffda 100%
   );
   background-size: 200% 200%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientShift 3s ease-in-out infinite;
@@ -282,30 +283,219 @@
   z-index: 0;
 } */
 
-@media screen and (max-width: 830px) {
+/* Mobile First - Small phones (320px - 480px) */
+@media screen and (max-width: 480px) {
   .container {
     flex-direction: column-reverse;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 60px;
+    min-height: 100vh;
+    justify-content: center;
+    gap: 2rem;
   }
-  .title{
-    font-size: 50px;
-  }
+
   .content {
     align-items: center;
+    text-align: center;
+    max-width: 100%;
+    order: 2;
   }
-  .heroImg{
-    justify-content: center; 
-    width: 30vh;
-    align-items: center;
-    margin-left: 5%;
-  }
-  .button-container {
-    justify-content: center; 
 
-    display: flex;
-    flex-direction: column;
+  .titleWrapper {
+    margin-bottom: 1.5rem;
   }
-  .contactBtn{
-    /* padding-right: 50px; */
-    padding-left: 50px;
+
+  .title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .greeting {
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .descriptionWrapper {
+    margin-bottom: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .buttonContainer {
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .cvBtn, .contactBtn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    width: 200px;
+    align-self: center;
+  }
+
+  .imageContainer {
+    order: 1;
+    margin-bottom: 1rem;
+  }
+
+  .heroImg {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .glowEffect {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Large phones (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-top: 70px;
+    gap: 2.5rem;
+  }
+
+  .content {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .greeting {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    padding: 0 1.5rem;
+  }
+
+  .buttonContainer {
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .cvBtn, .contactBtn {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+  }
+
+  .heroImg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .glowEffect {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Tablets - iPad Portrait (769px - 834px) */
+@media screen and (min-width: 769px) and (max-width: 834px) {
+  .container {
+    margin-left: 6%;
+    margin-right: 6%;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .content {
+    max-width: 500px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+
+  .greeting {
+    font-size: 1.7rem;
+  }
+
+  .name {
+    font-size: 3.2rem;
+  }
+
+  .description {
+    font-size: 1.15rem;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .buttonContainer {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .heroImg {
+    width: 320px;
+    height: 320px;
+  }
+
+  .glowEffect {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+/* Tablets - iPad Landscape (835px - 1024px) */
+@media screen and (min-width: 835px) and (max-width: 1024px) {
+  .container {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .heroImg {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+/* Large tablets/Small desktops (1025px - 1200px) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .container {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .heroImg {
+    width: 380px;
+    height: 380px;
   }
 }
