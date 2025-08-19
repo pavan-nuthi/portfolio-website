@@ -75,7 +75,7 @@ public/
 
 ## Contact
 
-- **LinkedIn**: [Pavan Kumar Nuthi](https://linkedin.com/in/pavan-kumar-nuthi-80a9002a8)
+- **LinkedIn**: [Pavan Kumar Nuthi](https://www.linkedin.com/in/pavan-k-nuthi/)
 - **GitHub**: [pavan-nuthi](https://github.com/pavan-nuthi)
 - **Email**: pavankumarnuthi@gmail.com
 
