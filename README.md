@@ -2,8 +2,6 @@
 
 Interactive portfolio website showcasing software engineering skills with modern animations and dynamic features.
 
-![Portfolio Preview](public/hero/heroImage.png)
-
 ## Key Features
 
 - **Dynamic Hero Section** - Particle background effects
