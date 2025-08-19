@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import Typewriter from "typewriter-effect";
 import Tilt from "react-parallax-tilt";
 
 import styles from "./Hero.module.css";
@@ -118,31 +117,42 @@ export const Hero = () => {
           <h1 className={styles.title}>
             <span className={styles.greeting}>Hi, I'm</span>
             <span className={styles.name}>
-              <Typewriter
-                options={{
-                  strings: ['Pavan Kumar', 'a Developer', 'a Problem Solver'],
-                  autoStart: true,
-                  loop: true,
-                  delay: 100,
-                  deleteSpeed: 50,
-                }}
-              />
+              Pavan Kumar
             </span>
           </h1>
         </motion.div>
         
         <motion.div variants={itemVariants} className={styles.descriptionWrapper}>
           <p className={styles.description}>
-            I'm a <span className={styles.highlight}>Computer Science graduate student</span> at UC Davis,{' '}
-            with hands-on experience building <span className={styles.highlight}>scalable infrastructure</span>,{' '}
-            identity solutions, and distributed systems at{' '}
-            <span className={styles.company}>Athenahealth</span> and <span className={styles.company}>Sprinklr</span>.{' '}
-            Currently seeking opportunities as a{' '}
-            <span className={styles.highlight}>Software Development Engineer (SDE)</span>,{' '}
-            <span className={styles.highlight}>Backend Engineer</span>,{' '}
-            <span className={styles.highlight}>Full Stack Engineer</span>,{' '}
-            <span className={styles.highlight}>Frontend Engineer</span>, or{' '}
-            <span className={styles.highlight}>DevOps Engineer</span>.
+            I'm a Computer Science graduate studen at{' '}
+            <a 
+              href="https://www.ucdavis.edu" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={styles.highlight}
+              style={{ textDecoration: 'none' }}
+            >
+              UC Davis
+            </a>, with hands-on experience building scalable infrastructure, identity solutions,{' '}
+            and distributed systems at{' '}
+            <a 
+              href="https://www.athenahealth.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={styles.company}
+              style={{ textDecoration: 'none' }}
+            >
+              Athenahealth
+            </a>{' '}and{' '}
+            <a 
+              href="https://www.sprinklr.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={styles.company}
+              style={{ textDecoration: 'none' }}
+            >
+              Sprinklr
+            </a>. Currently seeking opportunities as a Software Development Engineer, Backend Engineer, Full Stack Engineer, Frontend Engineer, or DevOps Engineer.
           </p>
         </motion.div>
         
