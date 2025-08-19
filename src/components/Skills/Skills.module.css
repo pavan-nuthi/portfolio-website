@@ -323,10 +323,11 @@
   }
 }
 
-/* Tablets (769px - 1024px) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+/* Tablets - iPad Portrait (769px - 834px) */
+@media screen and (min-width: 769px) and (max-width: 834px) {
   .container {
-    padding: 4.5rem 8% 3rem;
+    padding: 4.5rem 6% 0;
+    min-height: 80vh;
   }
 
   .title {
@@ -370,8 +371,8 @@
 /* iPad Pro and Large tablets (1025px - 1400px) */
 @media screen and (min-width: 1025px) and (max-width: 1400px) {
   .container {
-    padding: 4rem 9% 2rem;
-    min-height: 85vh;
+    padding: 4rem 9% 0;
+    min-height: 80vh;
     display: flex;
     align-items: center;
   }
