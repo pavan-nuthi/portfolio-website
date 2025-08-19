@@ -136,8 +136,10 @@ export const Contact = () => {
               }
             }}
           >
-            Whether you have a question or just want to say hi!
-            Let's create something <span className={styles.highlight}>amazing</span> together.
+            I'm actively seeking internship opportunities for Fall 2026 and Spring 2027, 
+            as well as full-time positions starting May 2027. Whether you have exciting job
+            opportunities to discuss or just want to connect, I'd love to hear from you!
+            Please feel free to drop an email!
           </motion.p>
         </motion.div>
         
