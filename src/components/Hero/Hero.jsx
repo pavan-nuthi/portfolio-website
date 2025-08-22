@@ -162,7 +162,7 @@ export const Hero = () => {
         >
           <motion.button
             className={styles.cvBtn}
-            onClick={() => {window.open(getImageUrl("hero/Resume_Pavan_UCD.pdf"), '_blank');}}
+            onClick={() => {window.open(getImageUrl("hero/Resume-Pavan-Kumar-Nuthi.pdf"), '_blank');}}
             whileHover={{ 
               scale: 1.05,
               backgroundColor: "rgba(100, 255, 218, 0.1)",
