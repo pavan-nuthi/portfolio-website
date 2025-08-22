@@ -124,7 +124,7 @@ export const Hero = () => {
         
         <motion.div variants={itemVariants} className={styles.descriptionWrapper}>
           <p className={styles.description}>
-            I'm a Computer Science graduate studen at{' '}
+            I'm a Computer Science graduate student at{' '}
             <a 
               href="https://www.ucdavis.edu" 
               target="_blank" 
