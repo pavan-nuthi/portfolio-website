@@ -136,7 +136,7 @@ export const Contact = () => {
               }
             }}
           >
-            I'm actively seeking internship opportunities for Fall 2026 and Spring 2027. Whether you have exciting job
+            I'm actively seeking internship opportunities for Summer 2026 and Fall 2026. Whether you have exciting job
             opportunities to discuss or just want to connect, I'd love to hear from you!
             Let's build something amazing together!
           </motion.p>
