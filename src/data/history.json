@@ -1,13 +1,25 @@
 [
   {
+    "role": "Reader",
+    "organisation": "University of California, Davis",
+    "startDate": "January, 2026",
+    "endDate": "Present",
+    "experiences": [
+      "Graded assignments and in-class activities for the course DES198: AI and Design, providing constructive feedback to enhance student learning.",
+      "Supported students in understanding design and AI trade-offs, usability challenges, and ethical considerations.",
+      "Participated in lectures to ensure alignment with course goals and consistency in assessments."
+    ],
+    "imageSrc": "history/ucd.png"
+  },
+  {
     "role": "Associate Member of Technical staff",
     "organisation": "Athenahealth",
     "startDate": "January, 2025",
     "endDate": "Present",
     "experiences": [
-      "Implemented a password cleanup strategy in Oracle databases, strengthening overall system security and reducing attack surfaces.",
-      "Developed and supported automated user provisioning workflows from external hospital Identity Providers (IdPs) reducing on-boarding time by over 90%.",
-      "Developed the backend for a user migration service to transition user accounts from Athenahealth’s application to Okta, enabling secure and centralized identity management."
+      "Enhanced system security and reduced attack surfaces by implementing a password cleanup in Oracle databases.",
+      "Automated user provisioning by developing workflows that integrated external hospital IdPs, reducing manual onboarding time for thousands of healthcare professionals by over 80%.",
+      "Engineered a backend user migration service to transition accounts from Athenahealth’s application to Okta, enabling secure and centralized identity management."
     ],
     "imageSrc": "history/athenahealth.png"
   },
@@ -17,9 +29,9 @@
     "startDate": "August, 2024",
     "endDate": "December, 2024",
     "experiences": [
-      "Completely automated the process of setup of infrastructure for Elasticsearch servers using Ansible and improved the speed of setup by over 90%.",
-      "Involved in designing and creating resiliency scripts for monitoring resources deployed on Elasticsearch servers, as well as implementing auto-remediation tasks in response to any server-related issues.",
-      "Involved in reducing the recovery time objective(RTO) by over 90% by making solutions for automating the entire process of disaster recovery by using Ansible playbooks and minimizing manual intervention."
+      "Automated Elasticsearch infrastructure setup using Ansible, improving deployment speed by over 90%.",
+      "Designed and implemented self-healing scripts for monitoring Elasticsearch server health.",
+      "Reduced the Recovery Time Objective (RTO) by over 90% by automating the entire disaster recovery process with Ansible playbooks, which minimized manual intervention."
     ],
     "imageSrc": "history/sprinklr.png"
   },
@@ -29,9 +41,8 @@
     "startDate": "January, 2024",
     "endDate": "June, 2024",
     "experiences": [
-      "Designed disaster recovery solutions by making solutions for almost real-time replication of data in the disaster recovery environment.",
-      "This resulted in a decrease of the recovery point objective (RPO) to almost 2 hours and improved fault tolerance by more than 99%.",
-      "Refactored legacy code written in perl to python."
+      " Reduced the Recovery Point Objective (RPO) to under 2 hours by designing and implementing disaster recovery solutions using Python scripts, Elasticsearch, MongoDB, and AWS for near real-time data replication.",
+      "Modernized the codebase by refactoring legacy Perl scripts into Python to improve performance and long-term maintainability."
     ],
     "imageSrc": "history/sprinklr.png"
   },
@@ -41,8 +52,9 @@
     "startDate": "Aug, 2023",
     "endDate": "Dec, 2023",
     "experiences": [
-      "Assisted in the creation of new course material from scratch based on the concepts from the textbook Database System Concepts and variety of online resources.",
-      "Developed practical and challenging course assignments on a weekly basis throughout the semester."
+      "Designed and authored comprehensive course materials for a cohort of 700 students, enhancing their understanding of database systems.",
+      "Developed over a dozen practical assignments that reinforced core concepts and promoted problem-solving skills.",
+      "Assisted with grading, office hours, and student guidance, fostering a supportive learning environment."
     ],
     "imageSrc": "history/pesu.png"
   }
